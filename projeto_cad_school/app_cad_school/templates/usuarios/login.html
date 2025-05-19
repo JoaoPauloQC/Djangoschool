@@ -1,0 +1,77 @@
+{%extends 'usuarios/base.html' %}
+
+{% block conteudo%}
+
+    <style>
+        
+        .input{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 90%;
+            min-width: 75%;
+            align-self: center;
+            background-color: #ededed;
+            border: 0.5px solid #ababab;
+            border-radius: 7.5px;
+            padding: 5px 10px;
+        }
+
+        button{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 90%;
+            min-width: 75%;
+            align-self: center;
+            background-color: #1100ff;
+            border: 0.5px solid #1100ff;
+            border-radius: 10px;
+            padding: 5px 10px;
+            color: white;
+        }
+
+        input ::placeholder{
+            padding-left: 10px;
+        }
+
+        .cute{
+            max-width: 300px;
+            margin: auto;
+            border-radius: 20px ;
+            background-color: white;
+            margin-top: 10vh;
+            height: 400px;
+        }
+
+
+        .container {
+
+            padding: 10px 5px ;
+            box-sizing: content-box;
+            display: grid;
+            row-gap: 20px;
+        }
+
+    </style>
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Login</a>
+        </div>
+    </nav>
+
+    <form class="cute" action="{% url 'informacoes' %}" method="post">
+        {% csrf_token %}
+        <div style="text-align: center;" class="container">
+            
+            
+            <h1> Login </h1>
+            <input class="input input-user" placeholder="User" class="form-control-sm" type="text" name="nome">
+            <input class="input input-password" placeholder="Password" class="form-control-sm" type="password" name="senha">
+            <button class="form-control-sm">Login</button>
+        </div>
+
+
+    </form>
+
+
+{% endblock %}
