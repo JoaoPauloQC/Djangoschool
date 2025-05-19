@@ -5,7 +5,6 @@
 <div class="container">
     <table class="table table-bordered table-striped">
         <tr>
-            <th>id</th>
             <th>nome</th>
             <th>notas</th>
 
@@ -15,10 +14,10 @@
         
         {% for nota in notas %}
         <tr>
-            <td>{{nota.Materia.nome}}</td>
+            <td>{{nota.materia.nome}}</td>
             <td>{{nota.media}}</td>
             
-            <td>0</td>
+            
         </tr>
         {% endfor %}
 

@@ -1,0 +1,116 @@
+@keyframes aumentar {
+    0% {
+        transform: scale(1.0);
+        transform: translateZ(0); /* ativa aceleração de GPU */
+        backface-visibility: hidden;
+
+    }
+    100% {
+        
+        
+        transform: scale(1.1);
+        transform: translateZ(0); /* ativa aceleração de GPU */
+        backface-visibility: hidden;
+
+
+
+    }
+}
+
+
+
+.input{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    min-width: 75%;
+    align-self: center;
+    background-color: #ededed61;
+    border: 0.5px solid #e3e3e382;
+    border-radius: 7.5px;
+    padding: 5px 10px;
+}
+
+button{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90%;
+    min-width: 75%;
+    align-self: center;
+    background-color: #1100ff;
+    border: 0.5px solid #1100ff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    position: relative;
+}
+
+input ::placeholder{
+    padding-left: 10px;
+}
+
+.cute{
+    max-width: 300px;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px ;
+    background-color: white;
+    margin-top: 10vh;
+    height: 400px;
+    box-shadow: -5px 4px 15px 2px rgb(0, 0, 0, 0.05);
+}
+
+
+.container {
+    width: unset !important;
+    padding: 10px 5px ;
+    box-sizing: content-box;
+    display: grid;
+    row-gap: 20px;
+    height: 100%;
+    margin-right: 0 ;
+}
+
+.inputs-area{
+    display: grid;
+    
+}
+
+.login-title{
+    padding-top: 30px;
+    height: fit-content;
+}
+
+footer{
+            
+    font-size: 1rem;
+        }
+
+footer h2{
+    font-size: 1rem;
+        }
+
+
+
+
+input:focus{
+   outline: 1px solid #d6d6d6d3;
+   
+}
+
+body{
+    background-color: #f5f5f085; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+button:hover , button:focus {
+    box-sizing: content-box;
+    animation: aumentar 1s ease-out forwards;
+    
+}
+
+main{
+    
+}
